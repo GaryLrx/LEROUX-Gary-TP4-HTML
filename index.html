@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="TP n°5 du 09/08/2021">
+    <title>TP n°5</title>
+</head>
+<body>
+    <h1>Leroux Gary - Les formulaires</h1>
+    <hr>
+    <h2>Mon premier formulaire</h2>
+<form>
+    <div>
+            <input type="radio" id="M" name="civilite" value="M">
+            <label for="M">M</label>
+    </div>
+
+    <div>
+            <input type="radio" id="Mme" name="civilite" value="Mme">
+            <label for="Mme">Mme</label>
+    </div>
+    
+    <div>
+            <input type="radio" id="NonRenseigné" name="civilite" value="NonRenseigné">
+            <label for="NonRenseigné">Non specifié</label>
+    </div>
+    <div>  
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" placeholder="ex : Parker" required>
+    </div>
+    <div>  
+            <label for="Prenom">Prénom :</label>
+            <input type="text" id="Prenom" name="Prenom" placeholder="ex : Peter" required>
+    </div>
+    <div>
+            <label for="Age">Âge (16-99):</label>
+            <input type="number" id="Age" name="Age" min="16" max="99">
+    </div>
+    <div>
+            <label for="email">E-Mail :</label>
+            <input type="email" id="email" name="email" placeholder="ex : peterparker@gmail.com" required>
+    </div>
+    <div>
+            <label for="msg">Message :</label>
+            <textarea id="msg" name="msg"></textarea>
+    </div>
+    <div>
+            <input type="checkbox" id="donnees" name="donnees" checked>
+            <label for="donnees">En cochant cette case j'accepte les conditions relatives à l'utilisation de mes données personnelles. (accéder aux mentions légales)</label>
+    </div>
+    <div>
+            <input type="submit" value="Envoyer le message" name="submit">
+    </div>
+</form>
+
+<hr>
+<h2>Ensemble de champs</h2>
+<form>
+    <fieldset>
+        <legend>Mon second formulaire</legend>
+    
+    <fieldset>
+        <legend>Identité</legend>
+        <div>
+            <input type="radio" id="Homme" name="genre" value="Homme">
+            <label for="Homme">Homme</label>
+        </div>
+        <div>
+            <input type="radio" id="Femme" name="genre" value="Femme">
+            <label for="Femme">Femme</label>
+        </div>
+        <div>
+            <input type="radio" id="Nonrenseigne" name="genre" value="Nonrenseigne">
+            <label for="Nonrenseigne">Non renseigné</label>
+    </div>
+    <div>
+        <label for="Agenumber">Âge (16-99):</label>
+        <input type="number" id="Agenumber" name="Agenumber" min="16" max="99" placeholder="ex : 19" required>
+    </div>
+    </fieldset>
+    <fieldset>
+        <legend>Situation personnelle</legend>
+        <div>
+            <input type="radio" id=celibataire name="situation" value="celibataire">
+            <label for="celibataire">Celibataire</label>
+        </div>
+        <div>
+            <input type="radio" id=Marie name="situation" value="Marie">
+            <label for="Marie">Marié</label>
+        </div><div>
+            <input type="radio" id=Veuf name="situation" value="Veuf">
+            <label for="Veuf">Veuf</label>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Contact</legend>
+        <div>
+            <label for="telephone">Téléphone :</label>
+            <input type="text" id="telephone" name="contact" placeholder="ex : 06.24.98.62.42" required>
+        </div>
+        <div>
+            <label for="mail">E-mail :</label>
+            <input type="email" id="mail" name="mail" placeholder="ex : peterparker@gmail.com" required>
+        </div>
+    </fieldset>
+    <div>
+            <input type="checkbox" id="case" name="case" checked>
+            <label for="case"> En cochant cette case je confirme que les données renseignées sont exactes</label>
+    </div>
+    <div>
+            <input type="submit" value="Transmettre mes coordonnées " name="submit">
+    </div>
+    </fieldset>
+</form>
+</body>
+</html>
